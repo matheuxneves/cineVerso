@@ -1,0 +1,445 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #012041;
+    color: white;
+    padding: 11px;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+  }
+  
+  nav {
+    position: fixed;
+    top: 86px;
+    left: 0;
+    width: 100%;
+    background-color: #4386ce;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 999;
+  }
+
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+    
+  }
+  
+  nav a:hover {
+    color: #ffcc00;
+  }
+
+    .logo-cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-img {
+    width: 50px;
+    height: auto;
+  }
+  
+  main {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10rem;
+    
+  }
+  
+  section {
+    display: none;
+  }
+  
+  section.active {
+    display: block;
+  }
+/**************** Home********************/
+body section p {
+  text-align: left;
+  padding: 2rem;
+  color: #000000;
+}
+
+  .paragrafo-home{
+    color: #fff;
+  }
+
+  .link-paragrafo{
+    color: inherit;
+    text-decoration: underline;
+    transition: color 0.08s ease;
+  }
+
+  .link-paragrafo:hover{
+    color:#031e3a
+  }
+
+  #home{
+    text-align: center; 
+  }
+
+  .welcome{
+    color: #111;
+    margin-bottom: 1.5rem; 
+  }
+
+  #welcome2{
+    color: #ffffff;
+    background-color: #115eaf;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 2rem;
+    border-radius: 1.5rem;
+    padding: 1rem;  
+  }
+
+  .titulo{
+    text-align: center;
+    color: #000000;
+  }
+
+  .imagens{
+    width: auto;
+    max-width: 90%;
+    height: 15rem;
+    border-radius: 1.5rem;
+  }
+
+  /***************** Carrossel de imagens ***************/
+#carrossel-content{
+  padding: 1rem;
+  width: 100%;
+}
+
+.slider {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;          /* Aumenta a largura máxima */
+  aspect-ratio: 16 / 9;       /* Aumenta um pouco a altura mantendo proporção */
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  height: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 10%;              /* Cada slide ocupa 10% do container (10 slides) */
+  height: 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsividade específica para telas pequenas */
+@media (max-width: 600px) {
+  .slider {
+    aspect-ratio: 16 / 9;     /* Proporção mais alta em telas menores */
+    max-width: 100%;          /* Ocupar 100% da largura da tela pequena */
+  }
+}
+
+/***************** Fim do Carrossel de imagens ***************/
+
+ /***************************** Container do quiz ***************************/
+#quiz{
+  background-color: #ffffff;
+}
+ .quiz-container {
+  background: #ffffff;
+  border: 3px solid #115eaf; 
+  border-radius: 1.5rem;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 65%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+  text-align: center;
+}
+
+
+/* Título */
+.quiz-container h1 {
+  color: #007BFF;
+  margin-bottom: 16px;
+}
+
+/* Pergunta */
+#question {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Botões de resposta */
+.answer-btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #e7f1ff;
+  color: #333;
+  border: 2px solid #007BFF;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.answer-btn:hover {
+  background-color: #cce4ff;
+}
+
+/* Botões de resposta corretos/errados */
+.correct {
+  background-color: #28a745 !important;
+  color: white;
+  border-color: #28a745;
+}
+
+.wrong {
+  background-color: #dc3545 !important;
+  color: white;
+  border-color: #dc3545;
+}
+
+/* Botão next */
+#next {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#next:disabled {
+  background-color: #a3c9f7;
+  cursor: not-allowed;
+}
+
+#next:hover:enabled {
+  background-color: #0056b3;
+}
+
+#retry{
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #007BFF;
+  transition: background-color 0.3s ease;
+}
+
+/* Resultado final */
+#result {
+  font-size: 20px;
+  color: #007BFF;
+  font-weight: bold;
+}
+  
+/***************************** Chatbot *************************/
+#chatbot {
+  width: 65%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+  background-color: #700909;
+}
+
+#chatbot h2{
+  text-align: center;
+  color: #fff;
+}
+.chat-container {
+  
+  border-radius: 1.5rem;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  padding: 1rem;
+  height: 20rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+.chat-messages {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  height: 90%;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.chat-input-area {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  justify-content: center;
+}
+
+.chat-input-area input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  max-width: 80%;
+}
+
+.chat-input-area button {
+  padding: 10px 16px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.1s;
+  
+}
+
+.chat-input-area button:hover {
+  background-color: #0056b3;
+}
+
+/********** Fim do Chatbot **********/
+
+
+/********************Recomendações semanais*************************/
+#tabela{
+  width: 80%;
+  align-self: center;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  padding: 1rem;
+  background-color: #fff;
+
+}
+
+.table-wrapper{
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tabela-genero {
+  margin-bottom: 40px;
+  
+}
+
+.tabela-genero h3 {
+  margin-bottom: 10px;
+  color: #000000;
+  border-left: 5px solid #ffcc00;
+  padding-left: 10px;
+
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  min-width: 600px;
+  width: 100%;
+  color: #000000;
+
+}
+
+
+th, tr {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+th {
+  background-color: #700909;
+  font-weight: bold;
+  color: #fff;
+}
+
+tr{
+  width: 100%;
+}
+
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Coluna "Duração" */
+th:nth-child(2),
+td:nth-child(2) {
+  width: 11%;
+}
+
+/* Rodapé */
+footer {
+  background-color: #012041;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto; 
+  font-size: 14px;
+}
+  /*Responsividade*/
+
+    @media screen and (max-width: 798px){
+    .container{
+        display: block;
+        background-image: none;
+    }
+
+    }
+
+  

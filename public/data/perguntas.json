@@ -1,0 +1,357 @@
+{
+  "response_code": 0,
+  "results": [
+
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Film",
+      "question": "Quem dirigiu os filmes \"Pulp Fiction\", \"Reservoir Dogs\" and \"Django Unchained\"?",
+      "correct_answer": "Quentin Tarantino",
+      "incorrect_answers": [
+        "Martin Scorcese",
+        "Steven Spielberg",
+        "James Cameron"
+      ]
+    },
+
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Film",
+      "question": "Quem interpreta Alice nos filmes Resident Evil?",
+      "correct_answer": "Milla Jovovich",
+      "incorrect_answers": [
+        "Madison Derpe",
+        "Milla Johnson",
+        "Kim Demp"
+      ]
+    },
+
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Film",
+      "question": "Este filme contém a citação: \"I feel the need ... the need for speed!\"",
+      "correct_answer": "Top Gun",
+      "incorrect_answers": [
+        "Days of Thunder",
+        "The Color of Money",
+        "Velozes e Furiosos"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Film",
+      "question": "Qual filme lançado em 2016 mostra Superman e Batman lutando?",
+      "correct_answer": "Batman v Superman: Dawn of Justice",
+      "incorrect_answers": [
+        "Batman v Superman: Superapocalypse",
+        "Batman v Superman: Black of Knight",
+        "Batman v Superman: Knightfall"
+      ]
+    },
+
+
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Film",
+      "question": "Quem interpretou Bruce Wayne e Batman no filme 'Batman' de 1989 de Tim Burton?",
+      "correct_answer": "Michael Keaton",
+      "incorrect_answers": [
+        "George Clooney",
+        "Val Kilmer",
+        "Adam West"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Film",
+      "question": "Em \"Jurassic World\", qual é o nome do dinossauro que é um híbrido genético?",
+      "correct_answer": "Indominus Rex",
+      "incorrect_answers": [
+        "Mosasaurus",
+        "Pteranodon",
+        "Tyrannosaurus Rex "
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Film",
+      "question": "Quem em Pulp Fiction diz \"No, they got the metric system there, they wouldn't know what the f*** a Quarter Pounder is.\"",
+      "correct_answer": "Vincent Vega",
+      "incorrect_answers": [
+        "Jules Winnfield",
+        "Jimmie Dimmick",
+        "Butch Coolidge"
+      ]
+    },
+
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Film",
+      "question": "Quem interpretou Thanos em Vingadores: Guerra Infinita e Ultimato?",
+      "correct_answer": "Josh Brolin",
+      "incorrect_answers": [
+        "Tom Hiddleston",
+        "Adam Sandler",
+        "Sean Gunn"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Film",
+      "question": "Este filme contém a citação: \"Houston, we have a problem.\"",
+      "correct_answer": "Apollo 13",
+      "incorrect_answers": [
+        "The Right Stuff",
+        "Capricorn One",
+        "Marooned"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Film",
+      "question": "Qual filme de James Bond teve a música tema escrita e cantada pela cantora Adele?",
+      "correct_answer": "Skyfall",
+      "incorrect_answers": [
+        "Casino Royale",
+        "Quantum Solace",
+        "Spectre"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Film",
+      "question": "Daniel Radcliffe se tornou uma estrela global do cinema por sua atuação em qual franquia?",
+      "correct_answer": "Harry Potter",
+      "incorrect_answers": [
+        "Ted",
+        "Spy Kids",
+        "Pirates of the Caribbean "
+      ]
+    },
+
+
+     {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Film",
+    "question": "Qual diretor é conhecido por filmes como 'A Origem', 'Interestelar' e 'Tenet'?",
+    "correct_answer": "Christopher Nolan",
+    "incorrect_answers": ["James Cameron", "Steven Spielberg", "Denis Villeneuve"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Film",
+    "question": "Em 'O Senhor dos Anéis', qual o nome da espada quebrada que pertenceu a Isildur?",
+    "correct_answer": "Narsil",
+    "incorrect_answers": ["Andúril", "Sting", "Glamdring"]
+  },
+
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Film",
+    "question": "Qual filme ganhou o Oscar de Melhor Filme em 2020?",
+    "correct_answer": "Parasita",
+    "incorrect_answers": ["1917", "Coringa", "Era uma Vez em... Hollywood"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Film",
+    "question": "Qual desses filmes foi dirigido por Quentin Tarantino?",
+    "correct_answer": "Bastardos Inglórios",
+    "incorrect_answers": ["Clube da Luta", "Cães de Aluguel", "O Grande Lebowski"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Film",
+    "question": "Em que ano foi lançado o primeiro filme dos Vingadores?",
+    "correct_answer": "2012",
+    "incorrect_answers": ["2010", "2013", "2014"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Film",
+    "question": "Quem interpretou Coringa no filme 'O Cavaleiro das Trevas'?",
+    "correct_answer": "Heath Ledger",
+    "incorrect_answers": ["Joaquin Phoenix", "Jared Leto", "Jack Nicholson"]
+  },
+
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Film",
+    "question": "Em 'Matrix', o que Neo deve escolher entre?",
+    "correct_answer": "Pílula vermelha e pílula azul",
+    "incorrect_answers": ["Realidade e ilusão", "Luta e fuga", "Sonho e vigília"]
+  },
+
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Film",
+    "question": "Quem é o protagonista da série de filmes 'Missão: Impossível'?",
+    "correct_answer": "Tom Cruise",
+    "incorrect_answers": ["Matt Damon", "Brad Pitt", "Keanu Reeves"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Film",
+    "question": "Qual o nome do brinquedo cowboy em 'Toy Story'?",
+    "correct_answer": "Woody",
+    "incorrect_answers": ["Buzz", "Jessie", "Rex"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Film",
+    "question": "Qual é o nome do ogro verde protagonista de uma famosa animação?",
+    "correct_answer": "Shrek",
+    "incorrect_answers": ["Fiona", "Hulk", "Donkey"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Film",
+    "question": "Quem interpreta o Homem de Ferro no Universo Marvel?",
+    "correct_answer": "Robert Downey Jr.",
+    "incorrect_answers": ["Chris Evans", "Mark Ruffalo", "Chris Hemsworth"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Film",
+    "question": "Em 'Harry Potter', qual é o nome do castelo onde os alunos estudam magia?",
+    "correct_answer": "Hogwarts",
+    "incorrect_answers": ["Durmstrang", "Beauxbatons", "Azkaban"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Film",
+    "question": "Qual desses filmes é protagonizado por Leonardo DiCaprio?",
+    "correct_answer": "Titanic",
+    "incorrect_answers": ["Matrix", "Velozes e Furiosos", "Avatar"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Film",
+    "question": "Qual desses personagens é um super-herói da Marvel?",
+    "correct_answer": "Capitão América",
+    "incorrect_answers": ["Batman", "Mulher Maravilha", "Flash"]
+  },
+
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Film",
+    "question": "Qual vilão usa uma máscara preta e diz 'Eu sou seu pai'?",
+    "correct_answer": "Darth Vader",
+    "incorrect_answers": ["Kylo Ren", "Palpatine", "Luke Skywalker"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Film",
+    "question": "Qual é o nome do pai do Simba, no filme O Rei Leão?",
+    "correct_answer": "Mufasa",
+    "incorrect_answers": ["Pedro", "Melman", "Hakuna"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Film",
+    "question": "Quem interpreta o exigente professor Terence Fletcher em 'Whiplash'?",
+    "correct_answer": "J.K. Simmons",
+    "incorrect_answers": ["Miles Teller", "Ethan Hawke", "Michael Keaton"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Film",
+    "question": "Qual o instrumento que Andrew toca em 'Whiplash'?",
+    "correct_answer": "Bateria",
+    "incorrect_answers": ["Piano", "Trompete", "Saxofone"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Film",
+    "question": "Quem dirige o filme 'Blade Runner 2049'?",
+    "correct_answer": "Denis Villeneuve",
+    "incorrect_answers": ["Ridley Scott", "Christopher Nolan", "James Cameron"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Film",
+    "question": "Qual ator interpreta o personagem K em 'Blade Runner 2049'?",
+    "correct_answer": "Ryan Gosling",
+    "incorrect_answers": ["Harrison Ford", "Oscar Isaac", "Jared Leto"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Film",
+    "question": "Qual é o nome da nave onde se passa a maior parte do filme 'Alien, o 8º Passageiro'?",
+    "correct_answer": "Nostromo",
+    "incorrect_answers": ["Sulaco", "Aurora", "Prometheus"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Film",
+    "question": "Quem interpreta a Tenente Ripley na franquia 'Alien'?",
+    "correct_answer": "Sigourney Weaver",
+    "incorrect_answers": ["Charlize Theron", "Linda Hamilton", "Jamie Lee Curtis"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Film",
+    "question": "Qual desses vilões aparece no filme 'Homem-Aranha: Sem Volta Para Casa'?",
+    "correct_answer": "Duende Verde",
+    "incorrect_answers": ["Bolsonaro", "Morbius", "Abutre"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Film",
+    "question": "Qual é o nome do personagem de Tom Holland no Universo Cinematográfico da Marvel?",
+    "correct_answer": "Peter Parker",
+    "incorrect_answers": ["Miles Morales", "Ben Reilly", "Harry Osborn"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Film",
+    "question": "Em 'Homem-Aranha no Aranhaverso', qual é o nome do protagonista?",
+    "correct_answer": "Miles Morales",
+    "incorrect_answers": ["Peter Parker", "Gwen Stacy", "Eddie Brock"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Film",
+    "question": "Qual é o nome do androide interpretado por Ian Holm em 'Alien, o 8º Passageiro'?",
+    "correct_answer": "Ash",
+    "incorrect_answers": ["David", "Walter", "Bishop"]
+  }
+  ]
+}

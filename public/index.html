@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/x-icon" href="imagens/logo_sem_nome.png">
+  <title>CineVerso</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="js/home.js" defer></script>
+  <script src="js/recomendacao.js" defer></script>
+  <script src="js/quiz.js" defer></script>
+  <script src="js/tabela.js" defer></script>
+
+</head>
+
+<body>
+
+    <header class="logo-cabecalho">
+      <img src="imagens/logo_sem_nome.png" alt="Logo Cineverso" class="logo-img">
+      <h1>CineVerso</h1>
+    </header>
+  
+    <nav>
+      <a href="#" onclick="showSection('home')">Home</a>
+      <a href="#" onclick="showSection('chatbot')">Recomendações</a>
+      <a href="#" onclick="showSection('quiz')">Quiz Nerd</a>
+      <a href="#" onclick="showSection('tabela')">Tabela Semanal</a>
+    </nav>
+
+    <main>
+
+<!------------------------------------------------------------Home------------------------------------------------------------->       
+      <section id="home" class="active">
+        <div class="welcome">
+          <h2 class="titulo">Bem-vindo ao CineVerso!</h2>
+          <p>Este website foi criado para quem ama cultura pop e está sempre em busca de novas histórias para assistir. Aqui, unimos tecnologia, interatividade e diversão para tornar a sua experiência de descoberta ainda mais personalizada e envolvente!</p>
+
+  <!---------------------------------Carrossel de imagens-------------------------------->
+          <div id="carrossel-content">
+              <div class="slider">
+                <div class="slides" id="carrossel-slides">
+                <!-- As imagens dos filmes serão inseridas dinamicamente aqui -->
+                </div>
+              </div>
+          </div> 
+  <!-------------------------------Fim do Carrossel de imagens---------------------------->
+        </div>
+
+        <div id="welcome2">
+
+          <h2>O que você vai encontrar por aqui?</h2>
+
+          <p class="paragrafo-home"><strong><a href="#" onclick="showSection('chatbot')" class="link-paragrafo">Recomendações personalizadas:</a></strong> Converse com nosso chatbot e receba sugestões de filmes e séries com base nas suas preferências.</p>
+          <div>
+            <img src="/imagens/youtube.png" alt="simbolo de cinema com fundo vermelho" class="imagens">
+          </div>
+          
+          <p class="paragrafo-home"> <strong><a href="#" onclick="showSection('quiz')" class="link-paragrafo">Quiz nerd interativo:</a></strong> Teste seus conhecimentos em um quiz sobre filmes e séries, com perguntas dinâmicas respondidas diretamente em nosso chat.</p>
+          <div>
+            <img src="/imagens/quiz.png" alt="imagem quiz" class="imagens">
+          </div>
+
+          <p class="paragrafo-home"> <strong><a href="#" onclick="showSection('tabela')" class="link-paragrafo">Sugestões por gênero:</a></strong> Explore nossas recomendações semanais dos 7 principais gêneros de filmes (comédia, terror, ação, ficção científica, drama, romance e documentário.)</p>
+          <div>
+            <img src="/imagens/icon-filme.webp" alt="imagem pipoca e simbolo de filme" class="imagens">
+          </div>
+
+        </div>   
+        
+      </section>
+<!---------------------------------------------------------Fim da Home--------------------------------------------------------->  
+
+
+<!-----------------------------------------------------------Chatbot----------------------------------------------------------->
+      <section id="chatbot">
+        
+        <h2>Chat de recomendações</h2>
+
+        <div class="chat-container">            
+          <div id="chat" class="chat-messages"></div>
+          <div class="chat-input-area">
+            <input id="input" placeholder="Digite sua mensagem..." />
+            <button onclick="sendMsg()">Enviar</button>
+          </div>
+        </div>
+
+      </section>
+<!-------------------------------------------------------Fim do Chatbot-------------------------------------------------------->
+
+
+<!-------------------------------------------------------------Quiz------------------------------------------------------------>
+      <section id="quiz">
+        <div class="quiz-container">
+          <h1>Quiz de Filmes</h1>
+          <div id="quiz-box">
+            <p id="question"></p>
+            <div id="answers"></div>
+            <button id="next" disabled>Próxima</button>
+          </div>
+          <div id="result" style="display:none;">
+            <h2></h2>
+            <button id="retry">Tentar de novo</button>
+          </div>
+        </div>
+      </section>
+<!---------------------------------------------------------Fim do Quiz--------------------------------------------------------->      
+
+    </main>
+
+
+<!---------------------------------------------------Tabela de Recomendações--------------------------------------------------->
+<!--O conteúdo da tabela será preenchido automaticamente através da integração com a API TMDB-->
+<section id="tabela">
+
+  <div class="tabela-genero">
+    <h3>Ação</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Pôster</th>
+            <th>Nome do Filme</th>
+            <th>Duração</th>
+            <th>Data de Lançamento</th>
+            <th>Sinopse</th>
+            <th>Avaliação</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-acao"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="tabela-genero">
+    <h3>Comédia</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Pôster</th>
+            <th>Nome do Filme</th>
+            <th>Duração</th>
+            <th>Data de Lançamento</th>
+            <th>Sinopse</th>
+            <th>Avaliação</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-comedia"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="tabela-genero">
+    <h3>Ficção Científica</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Pôster</th>
+            <th>Nome do Filme</th>
+            <th>Duração</th>
+            <th>Data de Lançamento</th>
+            <th>Sinopse</th>
+            <th>Avaliação</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-ficcao"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="tabela-genero">
+    <h3>Drama</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Pôster</th>
+            <th>Nome do Filme</th>
+            <th>Duração</th>
+            <th>Data de Lançamento</th>
+            <th>Sinopse</th>
+            <th>Avaliação</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-drama"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="tabela-genero">
+    <h3>Terror</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Pôster</th>
+            <th>Nome do Filme</th>
+            <th>Duração</th>
+            <th>Data de Lançamento</th>
+            <th>Sinopse</th>
+            <th>Avaliação</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-terror"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="tabela-genero">
+    <h3>Romance</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Pôster</th>
+            <th>Nome do Filme</th>
+            <th>Duração</th>
+            <th>Data de Lançamento</th>
+            <th>Sinopse</th>
+            <th>Avaliação</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-romance"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="tabela-genero">
+    <h3>Documentário</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Pôster</th>
+            <th>Nome do Filme</th>
+            <th>Duração</th>
+            <th>Data de Lançamento</th>
+            <th>Sinopse</th>
+            <th>Avaliação</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-documentario"></tbody>
+      </table>
+    </div>
+  </div>
+
+</section>
+
+<!------------------------------------------------Fim da Tabela de Recomendações--------------------------------------------------->
+
+<!--------------------------------------------------------------Rodapé------------------------------------------------------------->  
+    <footer>
+      <p>&copy; 2025 CineVerso - Todos os direitos reservados</p>
+    </footer>
+<!---------------------------------------------------------Fim da Rodapé-----------------------------------------------------------> 
+
+</body>
+</html>
